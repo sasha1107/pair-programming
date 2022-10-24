@@ -1,0 +1,447 @@
+@font-face {
+    font-family: Noto Sans;
+    src: url("./font/Noto_Sans_KR/NotoSansKR-Regular.otf");
+}
+
+:root {
+    font-family: "Noto Sans";
+    font-weight: 500;
+}
+
+html {
+    width: 1920px;
+    height: 1080px;
+}
+
+body {
+    width: inherit;
+    height: inherit;
+    background-image: url("img/Logo.png");
+    background-position: center top;
+    background-size: 436px 204px;
+    background-repeat: no-repeat;
+    background-color: #EAE8FE;
+}
+
+.wrapper {
+    width: inherit;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.drink_Select {
+    width: 380px;
+    height: 545px;
+    background: #FFFFFF;
+    margin: 247px 0px 171px 566px;
+}
+
+.funds {
+    width: 360px;
+    height: 50px;
+    background: #FFFFFF;
+    margin: 248px 506px 4px -20px;
+}
+
+.shopping_list {
+    width: 360px;
+    height: 470px;
+    background: #FFFFFF;
+    margin: 20px 506px 171px -20px;
+}
+
+.Cola_Select {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+li {
+    list-style: none;
+}
+
+.Original_Cola,
+.Violet_Cola,
+.Yellow_Cola,
+.Cool_Cola,
+.Green_Cola,
+.Orange_Cola {
+    width: 94px;
+    height: 130px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.Original_Cola img,
+.Violet_Cola img,
+.Yellow_Cola img,
+.Cool_Cola img,
+.Green_Cola img,
+.Orange_Cola img {
+    display: block;
+    padding: 11px 29px 0px 29px;
+    
+}
+
+.Cola_label_cont {
+    width: 73px;
+    height: 10px;
+    display: block;
+    font-size: 5px;
+    line-height: 13px;
+    padding-top: 6px;
+    padding-bottom: 7px;
+    margin: 0 auto;
+}
+
+.Cola_label {
+    width: 73px;
+    height: 10px;
+    display: block;
+    font-size: 5px;
+    line-height: 13px;
+    padding-top: 6px;
+    padding-bottom: 7px;
+    margin-right: auto;
+}
+
+.Cola_Price {
+    display: inline-block;
+    font-size: 12px;
+    color: #FFFFFF;
+    background: #6327FE;
+    border-radius: 50px;
+    line-height: 100%;
+    padding: 5px 16px 5px 15px;
+}
+
+.Original_Cola {
+    margin: 31px 12px 12px 37px;
+}
+
+.Violet_Cola {
+    margin: 31px 12px 12px 0px;
+}
+
+.Yellow_Cola {
+    margin: 31px 27px 12px 0px;
+}
+
+.Cool_Cola {
+    margin: 0px 12px 20px 37px;
+}
+
+.Green_Cola {
+    margin: 0px 12px 20px 0px;
+}
+
+.Orange_Cola {
+    margin: 0px 27px 20px 0px;
+}
+
+.Original_Cola:hover,
+.Violet_Cola:hover,
+.Yellow_Cola:hover,
+.Cool_Cola:hover,
+.Green_Cola:hover,
+.Orange_Cola:hover {
+    cursor: pointer;
+    outline: 3px solid #6327FE;
+}
+.Violet_Cola{
+    position: relative;
+}
+.sold_out::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 94px;
+    height: 130px;
+    background-color: #000000;
+    opacity: 0.5;
+    border-radius: 10px;
+}
+
+.sold_out::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 94px;
+    height: 130px;
+    background-image: url("img/품절.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.Calculator {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+.Current_balance {
+    width: 200px;
+    height: 33px;
+    background: #EAE8FE;
+    border-radius: 5px;
+    margin: 0px 12px 11px 37px;
+}
+
+.balance {
+    float: left;
+    display: inline-block;
+    margin: 6px 79px 4px 10px;
+}
+
+.won {
+    float: right;
+    display: inline-block;
+    margin: 6px 10px 4px 0px;
+}
+
+.Deposit {
+    font-family: 'Noto Sans';
+    width: 196px;
+    height: 31px;
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+    margin: 0px 12px 11px 37px;
+}
+
+.Change_btn,
+.Deposit_btn {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 500;
+    width: 94px;
+    height: 33px;
+    font-size: 13px;
+    line-height: 19px;
+    cursor: pointer;
+    background: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+}
+
+.Coke_Select {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 198px;
+    height: 106px;
+    background: #EAE8FE;
+    border: 1px solid #BDBDBD;
+    border-radius: 5px;
+    margin: 0px 12px 20px 37px;
+}
+
+.Coke_list {
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 170px;
+    margin-left: -25px;
+
+}
+
+.Original_Coke,
+.Violet_Coke,
+.Yellow_Coke,
+.Cool_Coke,
+.Green_Coke,
+.Orange_Coke {
+    width: 160px;
+    background: #FFFFFF;
+    border-radius: 5px;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 9px;
+    line-height: 13px;
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.Original_Coke img,
+.Violet_Coke img,
+.Yellow_Coke img,
+.Cool_Coke img,
+.Green_Coke img,
+.Orange_Coke img {
+    margin: 6px 10px 7px 10px;
+}
+
+.Original_Coke_ls img,
+.Violet_Coke_ls img,
+.Yellow_Coke_ls img,
+.Cool_Coke_ls img,
+.Green_Coke_ls img,
+.Orange_Coke_ls img {
+    margin: 6px 10px 7px 10px;
+}
+
+span {
+    margin: 0;
+    padding: 0;
+
+}
+
+.choice {
+    width: 30px;
+    height: 30px;
+    font-family: 'Noto Sans';
+    font-size: 14px;
+    line-height: 25px;
+    border: 1px solid #BDBDBD;
+    border-radius: 5px;
+    margin: 8px 8px 8px 21px;
+}
+
+
+.Coke_get_btn {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 19px;
+    color: #FFFFFF;
+    width: 94px;
+    height: 108px;
+    cursor: pointer;
+    background: #6327FE;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+}
+
+.fund {
+    width: 306px;
+    height: 32px;
+    background: #EAE8FE;
+    border: 1px solid #BDBDBD;
+    border-radius: 5px;
+    margin: 9px 27px;
+}
+
+.fundage {
+    float: left;
+    display: inline-block;
+    margin: 5px 152px 4px 10px;
+}
+
+.fund_won {
+    float: right;
+    display: inline-block;
+    margin: 5px 10px 4px 0px;
+}
+
+.drink_get {
+    display: inline-block;
+    width: 68px;
+    height: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 25px 146px 13px 146px;
+}
+
+.drink_list {
+    width: 306px;
+    height: 334px;
+    background: #EAE8FE;
+    border: 1px solid #BDBDBD;
+    border-radius: 5px;
+    margin: 0px 27px 6px 27px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.Coke_list_ls {
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 276px;
+    margin-left: -25px;
+}
+
+
+.Original_Coke_ls,
+.Violet_Coke_ls,
+.Yellow_Coke_ls,
+.Cool_Coke_ls,
+.Green_Coke_ls,
+.Orange_Coke_ls {
+    width: 260px;
+    background: #FFFFFF;
+    border-radius: 5px;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 9px;
+    line-height: 13px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    margin-bottom: 6px;
+}
+
+.extended_price {
+    display: inline-block;
+    float: right;
+    width: 109px;
+    height: 20px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 17px;
+    margin: 0px;
+}
+
+
+.Coke_list::-webkit-scrollbar {
+    width: 5px;
+}
+
+.Coke_list::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 10px;
+}
+
+.Coke_list::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 10px;
+}
+
+.Coke_list_ls::-webkit-scrollbar {
+    width: 5px;
+}
+
+.Coke_list_ls::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 10px;
+}
+
+.Coke_list_ls::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 10px;
+}
