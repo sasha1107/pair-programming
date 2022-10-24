@@ -1,6 +1,6 @@
 @font-face {
     font-family: Noto Sans;
-    src: url("./font/Noto_Sans_KR/NotoSansKR-Regular.otf");
+    src: url("../font/Noto_Sans_KR/NotoSansKR-Regular.otf");
 }
 
 :root {
@@ -16,7 +16,7 @@ html {
 body {
     width: inherit;
     height: inherit;
-    background-image: url("img/Logo.png");
+    background-image: url("../img/Logo.png");
     background-position: center top;
     background-size: 436px 204px;
     background-repeat: no-repeat;
@@ -176,7 +176,7 @@ li {
     display: block;
     width: 94px;
     height: 130px;
-    background-image: url("img/품절.png");
+    background-image: url("../img/품절.png");
     background-repeat: no-repeat;
     background-position: center;
 }
