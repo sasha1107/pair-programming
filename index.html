@@ -52,7 +52,7 @@
                     <span class="won">1000원</span>
                 </p>
                 <button type="button" class="Change_btn">거스름돈 반환</button>
-                <input type="text" class="Deposit" placeholder="입금액 입력">
+                <input type="text" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" class="Deposit" placeholder="입금액 입력">
                 <button type="button" class="Deposit_btn">입금</button>
                 <div class="Coke_Select">
                     <ul class="Coke_list">
