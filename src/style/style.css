@@ -2,7 +2,9 @@
     font-family: Noto Sans;
     src: url("../font/Noto_Sans_KR/NotoSansKR-Regular.otf");
 }
-
+li {
+    list-style: none;
+}
 :root {
     font-family: "Noto Sans";
     font-weight: 500;
@@ -53,39 +55,32 @@ body {
 }
 
 .Cola_Select {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:12px;
     flex-wrap: wrap;
-    margin: 0px;
+    margin-left: 20px;
     padding: 0px;
     text-align: center;
+    position: relative;
 }
-
-li {
-    list-style: none;
-}
-
-.Original_Cola,
-.Violet_Cola,
-.Yellow_Cola,
-.Cool_Cola,
-.Green_Cola,
-.Orange_Cola {
+.Cola_Select li {
+    /* padding-top: 20px; */
     width: 94px;
     height: 130px;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
 }
 
-.Original_Cola img,
-.Violet_Cola img,
-.Yellow_Cola img,
-.Cool_Cola img,
-.Green_Cola img,
-.Orange_Cola img {
-    display: block;
-    padding: 11px 29px 0px 29px;
-    
+.Cola_List_img{
+    margin-top: 7px;
 }
+
+.Cola_Select li:hover {
+    cursor: pointer;
+    outline: 3px solid #6327FE;
+}
+
 
 .Cola_label_cont {
     width: 73px;
@@ -119,67 +114,21 @@ li {
     padding: 5px 16px 5px 15px;
 }
 
-.Original_Cola {
-    margin: 31px 12px 12px 37px;
-}
 
-.Violet_Cola {
-    margin: 31px 12px 12px 0px;
-}
-
-.Yellow_Cola {
-    margin: 31px 27px 12px 0px;
-}
-
-.Cool_Cola {
-    margin: 0px 12px 20px 37px;
-}
-
-.Green_Cola {
-    margin: 0px 12px 20px 0px;
-}
-
-.Orange_Cola {
-    margin: 0px 27px 20px 0px;
-}
-
-.Original_Cola:hover,
-.Violet_Cola:hover,
-.Yellow_Cola:hover,
-.Cool_Cola:hover,
-.Green_Cola:hover,
-.Orange_Cola:hover {
-    cursor: pointer;
-    outline: 3px solid #6327FE;
-}
-.Violet_Cola{
-    position: relative;
-}
 .sold_out::before{
     content: "";
     position: absolute;
-    top: 0;
-    left: 0;
     display: block;
     width: 94px;
     height: 130px;
     background-color: #000000;
     opacity: 0.5;
     border-radius: 10px;
-}
-
-.sold_out::after{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-    width: 94px;
-    height: 130px;
     background-image: url("../img/품절.png");
     background-repeat: no-repeat;
     background-position: center;
 }
+
 
 .Calculator {
     display: flex;
@@ -257,14 +206,8 @@ li {
     margin-left: -25px;
 
 }
-
-.Original_Coke,
-.Violet_Coke,
-.Yellow_Coke,
-.Cool_Coke,
-.Green_Coke,
-.Orange_Coke {
-    width: 160px;
+.Coke_list li,  .Coke_list_ls li{
+    width: 95%;
     background: #FFFFFF;
     border-radius: 5px;
     font-family: 'Noto Sans';
@@ -278,23 +221,10 @@ li {
     flex-direction: row;
     justify-content: space-between;
 }
-
-.Original_Coke img,
-.Violet_Coke img,
-.Yellow_Coke img,
-.Cool_Coke img,
-.Green_Coke img,
-.Orange_Coke img {
+.Coke_list li img,  .Coke_list_ls li img{
     margin: 6px 10px 7px 10px;
-}
+    width: 18px;
 
-.Original_Coke_ls img,
-.Violet_Coke_ls img,
-.Yellow_Coke_ls img,
-.Cool_Coke_ls img,
-.Green_Coke_ls img,
-.Orange_Coke_ls img {
-    margin: 6px 10px 7px 10px;
 }
 
 span {
@@ -312,6 +242,7 @@ span {
     border: 1px solid #BDBDBD;
     border-radius: 5px;
     margin: 8px 8px 8px 21px;
+    text-align: center;
 }
 
 
